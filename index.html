@@ -146,24 +146,6 @@
     }
   </style>
 
-<script>
-    function toggleComments() {
-      var comments = document.getElementsByClassName('comment');
-      for (var i = 0; i < comments.length; i++) {
-        comments[i].classList.toggle('show');
-      }
-    }
-    
-    function toggleReplyForm(commentId) {
-      var replyForm = document.getElementById(commentId + '-reply-form');
-      if (replyForm.style.display === 'none') {
-        replyForm.style.display = 'block';
-      } else {
-        replyForm.style.display = 'none';
-      }
-    }
-  </script>
-
 </head>
 <body>
   <div class="container">
