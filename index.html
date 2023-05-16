@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UI Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    a {
+        color: #33D7FF;
+      text-decoration: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .post {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    
+    .post .user-info {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    
+    .post .user-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post .user-info .user-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .post .user-info .username {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .post .interactions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .post .interactions .icon {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .post .user-info .timestamp {
+      font-size: 12px;
+      color: #999;
+    }
+    
+    .post .timestamp {
+      font-size: 12px;
+      color: #999;
+      margin-top: 5px;
+    }
+    
+    .post .post-content {
+      margin-bottom: 10px;
+    }
+    
+    .post .post-content img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .post .interactions {
+      display: flex;
+      align-items: center;
+    }
+    
+    .post .interactions .icon {
+      margin-right: 10px;
+      color: #999;
+    }
+    
+    .post .comments {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .post .comment {
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .post .comment .username2 {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .post .comment .content {
+      margin-left: 50px;
+  
+    }
+    
+    .comment-form {
+      margin-top: 10px;
+    }
+    
+    .comment-form textarea {
+      width: 100%;
+      padding: 5px;
+      resize: vertical;
+    }
+    
+    .comment-form button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #33BEFF;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+
+<script>
+    function toggleComments() {
+      var comments = document.getElementsByClassName('comment');
+      for (var i = 0; i < comments.length; i++) {
+        comments[i].classList.toggle('show');
+      }
+    }
+    
+    function toggleReplyForm(commentId) {
+      var replyForm = document.getElementById(commentId + '-reply-form');
+      if (replyForm.style.display === 'none') {
+        replyForm.style.display = 'block';
+      } else {
+        replyForm.style.display = 'none';
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="post">
+      <div class="user-info">
+        <img src="profile-picture.jpg" alt="Profile Picture">
+        <div class="user-details", class="interactions">
+            <div class="username"><a href="https://www.instagram.com">Fira Santika</a> posted on your timeline</div>
+            <div class="timestamp">32 minutes ago</div>
+        </div>
+      </div>
+      
+      <div class="post-content">
+        <p>3 years still you're here</p>
+        <img src="post-image.jpg" alt="Post Image">
+      </div>
+
+      <div class="interactions">
+        <div class="icon"><i class="fa-solid fa-heart"></i> Like (5)</div>
+        <div class="icon"><i class="fa-solid fa-share-nodes"></i> Share (21)</div>
+      </div>
+
+      <div class="comments">
+        <div class="comment">
+            <div class="user-info">
+                <img src="Profile-picture2.jpg" alt="Profile Picture">
+                    <div class="username"><a href="https://www.instagram.com">Arnold Siregar</a></div>
+                    <div class="timestamp">June 10, 2018</div>
+              </div>    
+        <span class="content">Tempat itu sangat indah</span>
+      </div>
+
+      <div class="comment-form">
+        <textarea placeholder="Add a comment..."></textarea>
+        <button type="submit">Post Comment</button>
+      </div>
+      </div>
+      
+        </div>
+      </body>
+      </html>
