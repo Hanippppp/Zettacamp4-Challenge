@@ -1,150 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI Design</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    a {
-        color: #33D7FF;
-      text-decoration: none;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    .post {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      padding: 10px;
-    }
-    
-    .post .user-info {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-    
-    .post .user-info img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-
-    .post .user-info .user-details {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .post .user-info .username {
-      font-weight: bold;
-      margin-right: 5px;
-    }
-
-    .post .interactions {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    
-    .post .interactions .icon {
-      margin-right: 10px;
-      cursor: pointer;
-    }
-
-    .post .user-info .timestamp {
-      font-size: 12px;
-      color: #999;
-    }
-    
-    .post .timestamp {
-      font-size: 12px;
-      color: #999;
-      margin-top: 5px;
-    }
-    
-    .post .post-content {
-      margin-bottom: 10px;
-    }
-    
-    .post .post-content img {
-      max-width: 100%;
-      margin-bottom: 10px;
-    }
-    
-    .post .interactions {
-      display: flex;
-      align-items: center;
-    }
-    
-    .post .interactions .icon {
-      margin-right: 10px;
-      color: #999;
-    }
-    
-    .post .comments {
-      background-color: #f0f0f0;
-      padding: 10px;
-      margin-top: 10px;
-    }
-
-    .post .comment {
-      margin-bottom: 5px;
-      padding-bottom: 5px;
-      border-bottom: 1px solid #ccc;
-    }
-    
-    .post .comment .username2 {
-      font-weight: bold;
-      margin-right: 5px;
-    }
-    
-    .post .comment .content {
-      margin-left: 50px;
   
-    }
-    
-    .comment-form {
-      margin-top: 10px;
-    }
-    
-    .comment-form textarea {
-      width: 100%;
-      padding: 5px;
-      resize: vertical;
-    }
-    
-    .comment-form button {
-      margin-top: 5px;
-      padding: 5px 10px;
-      background-color: #33BEFF;
-      color: #fff;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
@@ -171,11 +34,11 @@
       <div class="comments">
         <div class="comment">
             <div class="user-info">
-                <img src="Profile-picture2.jpg" alt="Profile Picture">
-                    <div class="username"><a href="https://www.instagram.com">Arnold Siregar</a></div>
-                    <div class="timestamp">June 10, 2018</div>
-              </div>    
-        <span class="content">Tempat itu sangat indah</span>
+              <img src="Profile-picture2.jpg" alt="Profile Picture">
+                    <div class="username2">Arnold Siregar</a></div>
+                    <div class="timestamp">June 10, 2018</div> 
+              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vitae voluptas asperiores dolorem, itaque officiis quos corporis dolor? Quis maiores facilis eius magni ipsam aliquam sed, harum rem fugiat? Beatae.</p>
+            </div>
       </div>
 
       <div class="comment-form">
